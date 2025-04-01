@@ -1,0 +1,84 @@
+\doxysection{Tramp\+::Artifact\+Equipment Class Reference}
+\hypertarget{class_tramp_1_1_artifact_equipment}{}\label{class_tramp_1_1_artifact_equipment}\index{Tramp::ArtifactEquipment@{Tramp::ArtifactEquipment}}
+
+
+Класс артефактного снаряжения  
+
+
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+Inheritance diagram for Tramp\+::Artifact\+Equipment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{class_tramp_1_1_artifact_equipment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_tramp_1_1_artifact_equipment_a946266257831fa9c1ce0b255949a53e8}\label{class_tramp_1_1_artifact_equipment_a946266257831fa9c1ce0b255949a53e8} 
+{\bfseries Artifact\+Equipment} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор, не принимающий аргументов \end{DoxyCompactList}\item 
+\Hypertarget{class_tramp_1_1_artifact_equipment_ae57189060cf35af519f66f50322e0a82}\label{class_tramp_1_1_artifact_equipment_ae57189060cf35af519f66f50322e0a82} 
+{\bfseries Artifact\+Equipment} (Equipment\+Type, size\+\_\+t, size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания афртефактного снаряжения \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_artifact_equipment_aa843155709df714e5d19d98c8c03d87c}{generate\+Defence}} () override
+\begin{DoxyCompactList}\small\item\em Метод для генерации размера защиты \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_artifact_equipment_ae44d1252d2a0f65f30afe0f4fe4782da}{get\+Difance\+Bonus}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения бонуса для защиты \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_tramp_1_1_regular_equipment}{Tramp\+::\+Regular\+Equipment}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Regular\+Equipment} (Equipment\+Type, size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания обычного снаряжения \end{DoxyCompactList}\item 
+{\bfseries Regular\+Equipment} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор, не принимающий аргументов \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_regular_equipment_aea1c5dfc3534627434c544ffd3e79485}{generate\+Defence}} () override
+\begin{DoxyCompactList}\small\item\em Метод для вычисления зашиты \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_regular_equipment_af94948402e02ac31453fa76add989e63}{get\+Difance}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения зашиты \end{DoxyCompactList}\item 
+Equipment\+Type \mbox{\hyperlink{class_tramp_1_1_regular_equipment_a49de903bb8369bd66f15bb1293edadef}{get\+Equipment\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения типа снаряжения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс артефактного снаряжения 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tramp_1_1_artifact_equipment_aa843155709df714e5d19d98c8c03d87c}\label{class_tramp_1_1_artifact_equipment_aa843155709df714e5d19d98c8c03d87c} 
+\index{Tramp::ArtifactEquipment@{Tramp::ArtifactEquipment}!generateDefence@{generateDefence}}
+\index{generateDefence@{generateDefence}!Tramp::ArtifactEquipment@{Tramp::ArtifactEquipment}}
+\doxysubsubsection{\texorpdfstring{generateDefence()}{generateDefence()}}
+{\footnotesize\ttfamily size\+\_\+t Tramp\+::\+Artifact\+Equipment\+::generate\+Defence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Метод для генерации размера защиты 
+
+\begin{DoxyReturn}{Returns}
+Размер защиты 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_tramp_1_1_i_equipment_a8ac7cea8ee487ec54e759738fe171219}{Tramp\+::\+IEquipment}}.
+
+\Hypertarget{class_tramp_1_1_artifact_equipment_ae44d1252d2a0f65f30afe0f4fe4782da}\label{class_tramp_1_1_artifact_equipment_ae44d1252d2a0f65f30afe0f4fe4782da} 
+\index{Tramp::ArtifactEquipment@{Tramp::ArtifactEquipment}!getDifanceBonus@{getDifanceBonus}}
+\index{getDifanceBonus@{getDifanceBonus}!Tramp::ArtifactEquipment@{Tramp::ArtifactEquipment}}
+\doxysubsubsection{\texorpdfstring{getDifanceBonus()}{getDifanceBonus()}}
+{\footnotesize\ttfamily size\+\_\+t Tramp\+::\+Artifact\+Equipment\+::get\+Difance\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения бонуса для защиты 
+
+\begin{DoxyReturn}{Returns}
+Бонус для защиты 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Item.\+h\end{DoxyCompactItemize}

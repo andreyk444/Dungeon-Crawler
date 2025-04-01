@@ -1,0 +1,90 @@
+\doxysection{Tramp\+::Encharted\+Weapon Class Reference}
+\hypertarget{class_tramp_1_1_encharted_weapon}{}\label{class_tramp_1_1_encharted_weapon}\index{Tramp::EnchartedWeapon@{Tramp::EnchartedWeapon}}
+
+
+Класс зачарованного оружия  
+
+
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+Inheritance diagram for Tramp\+::Encharted\+Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{class_tramp_1_1_encharted_weapon}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_tramp_1_1_encharted_weapon_a1fc72b2da82b68fdb98bbc9d9172ce7f}\label{class_tramp_1_1_encharted_weapon_a1fc72b2da82b68fdb98bbc9d9172ce7f} 
+{\bfseries Encharted\+Weapon} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор, не принимающий аргументов \end{DoxyCompactList}\item 
+\Hypertarget{class_tramp_1_1_encharted_weapon_aac35ee2fe310f166477097ce161ade2a}\label{class_tramp_1_1_encharted_weapon_aac35ee2fe310f166477097ce161ade2a} 
+{\bfseries Encharted\+Weapon} (std\+::string, size\+\_\+t, size\+\_\+t, const std\+::shared\+\_\+ptr$<$ Inature\+Element $>$ \&)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания зачарованного оружия \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ Inature\+Element $>$ \mbox{\hyperlink{class_tramp_1_1_encharted_weapon_aff74aed068b4ec9628e4972eb4ba55b2}{get\+Element}} () const override
+\begin{DoxyCompactList}\small\item\em Метод для получения природного элемента \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_encharted_weapon_ab21cad41ab919b6e3f81ff90cfa42c39}{generate\+Damage}} () override
+\begin{DoxyCompactList}\small\item\em Метод для генерации размера защиты \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_tramp_1_1_regular_weapon}{Tramp\+::\+Regular\+Weapon}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Regular\+Weapon} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор обычного оружия, не принимающий аргументов \end{DoxyCompactList}\item 
+{\bfseries Regular\+Weapon} (std\+::string, size\+\_\+t, size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания обычного оружия \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_regular_weapon_a8fb337f46940fa3b1eaec240b544783d}{generate\+Damage}} () override
+\begin{DoxyCompactList}\small\item\em Метод для вычисления наносимого урона \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_regular_weapon_ab242bd8d6c39bee85f3c3cd56c484a52}{get\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения размера урона \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_regular_weapon_ad42427954e3404e58fdb96a15c57a5e8}{get\+Max\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения максимального размера урона \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tramp_1_1_regular_weapon_a9619c0795f581d30c14a2ef99df6b628}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения названия оружия \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс зачарованного оружия 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tramp_1_1_encharted_weapon_ab21cad41ab919b6e3f81ff90cfa42c39}\label{class_tramp_1_1_encharted_weapon_ab21cad41ab919b6e3f81ff90cfa42c39} 
+\index{Tramp::EnchartedWeapon@{Tramp::EnchartedWeapon}!generateDamage@{generateDamage}}
+\index{generateDamage@{generateDamage}!Tramp::EnchartedWeapon@{Tramp::EnchartedWeapon}}
+\doxysubsubsection{\texorpdfstring{generateDamage()}{generateDamage()}}
+{\footnotesize\ttfamily size\+\_\+t Tramp\+::\+Encharted\+Weapon\+::generate\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Метод для генерации размера защиты 
+
+\begin{DoxyReturn}{Returns}
+Размер защиты 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_tramp_1_1_i_weapon_ae6a485560c85475a7783cd8bfe7006d0}{Tramp\+::\+IWeapon}}.
+
+\Hypertarget{class_tramp_1_1_encharted_weapon_aff74aed068b4ec9628e4972eb4ba55b2}\label{class_tramp_1_1_encharted_weapon_aff74aed068b4ec9628e4972eb4ba55b2} 
+\index{Tramp::EnchartedWeapon@{Tramp::EnchartedWeapon}!getElement@{getElement}}
+\index{getElement@{getElement}!Tramp::EnchartedWeapon@{Tramp::EnchartedWeapon}}
+\doxysubsubsection{\texorpdfstring{getElement()}{getElement()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ Inature\+Element $>$ Tramp\+::\+Encharted\+Weapon\+::get\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Метод для получения природного элемента 
+
+\begin{DoxyReturn}{Returns}
+Природный элемент 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_tramp_1_1_i_encharted_a5ef0b2f727c329b17b9b39acac631ad5}{Tramp\+::\+IEncharted}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Item.\+h\end{DoxyCompactItemize}

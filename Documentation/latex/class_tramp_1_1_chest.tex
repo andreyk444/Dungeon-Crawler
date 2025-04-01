@@ -1,0 +1,85 @@
+\doxysection{Tramp\+::Chest Class Reference}
+\hypertarget{class_tramp_1_1_chest}{}\label{class_tramp_1_1_chest}\index{Tramp::Chest@{Tramp::Chest}}
+
+
+Класс зачарованного и артефактного оружия  
+
+
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+Inheritance diagram for Tramp\+::Chest\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tramp_1_1_chest}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_tramp_1_1_chest_a7828a23776c78bfe797f566db13a8319}\label{class_tramp_1_1_chest_a7828a23776c78bfe797f566db13a8319} 
+{\bfseries Chest} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор, не принимающий аргументов \end{DoxyCompactList}\item 
+\Hypertarget{class_tramp_1_1_chest_a2e6d7fc800f1da54b6dc9e206fb7c93e}\label{class_tramp_1_1_chest_a2e6d7fc800f1da54b6dc9e206fb7c93e} 
+{\bfseries Chest} (std\+::string, size\+\_\+t, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tramp_1_1_i_item}{IItem}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания сундука \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_chest_afb0d3d1b0a07c21ab9ea676a9cfe12d6}{get\+Level}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения уровня сундука \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tramp_1_1_i_item}{IItem}} $>$ \mbox{\hyperlink{class_tramp_1_1_chest_a1eadd0ac8dd9eb81cefbe9fe96053106}{get\+Item}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения предмета, лежащего в сундуке \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tramp_1_1_chest_a4aa3720f33b6ece1038e887af6153855}{is\+Open}} () const
+\begin{DoxyCompactList}\small\item\em Метод для проверки, открыт ли сундук \end{DoxyCompactList}\item 
+\Hypertarget{class_tramp_1_1_chest_acf50ba126524ebb71165b72a0c89ceb8}\label{class_tramp_1_1_chest_acf50ba126524ebb71165b72a0c89ceb8} 
+void {\bfseries open} ()
+\begin{DoxyCompactList}\small\item\em Метод для открытия сундука \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс зачарованного и артефактного оружия 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tramp_1_1_chest_a1eadd0ac8dd9eb81cefbe9fe96053106}\label{class_tramp_1_1_chest_a1eadd0ac8dd9eb81cefbe9fe96053106} 
+\index{Tramp::Chest@{Tramp::Chest}!getItem@{getItem}}
+\index{getItem@{getItem}!Tramp::Chest@{Tramp::Chest}}
+\doxysubsubsection{\texorpdfstring{getItem()}{getItem()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tramp_1_1_i_item}{IItem}} $>$ Tramp\+::\+Chest\+::get\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения предмета, лежащего в сундуке 
+
+\begin{DoxyReturn}{Returns}
+Предмет, лежащий в сундуке 
+\end{DoxyReturn}
+\Hypertarget{class_tramp_1_1_chest_afb0d3d1b0a07c21ab9ea676a9cfe12d6}\label{class_tramp_1_1_chest_afb0d3d1b0a07c21ab9ea676a9cfe12d6} 
+\index{Tramp::Chest@{Tramp::Chest}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!Tramp::Chest@{Tramp::Chest}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily size\+\_\+t Tramp\+::\+Chest\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения уровня сундука 
+
+\begin{DoxyReturn}{Returns}
+Уровень сундука 
+\end{DoxyReturn}
+\Hypertarget{class_tramp_1_1_chest_a4aa3720f33b6ece1038e887af6153855}\label{class_tramp_1_1_chest_a4aa3720f33b6ece1038e887af6153855} 
+\index{Tramp::Chest@{Tramp::Chest}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!Tramp::Chest@{Tramp::Chest}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool Tramp\+::\+Chest\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для проверки, открыт ли сундук 
+
+\begin{DoxyReturn}{Returns}
+Открыт или закрыт сундук 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Item.\+h\end{DoxyCompactItemize}

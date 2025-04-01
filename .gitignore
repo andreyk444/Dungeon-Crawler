@@ -1,0 +1,70 @@
+# Build artifacts
+/build/
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+cmake_install.cmake
+Makefile
+install_manifest.txt
+/dist/ #Or what ever is your dist folder
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+*.d
+
+# Libraries
+*.lib
+*.a
+*.so
+*.dll
+
+# Debug files
+*.pdb
+*.idb
+*.suo
+*.user
+
+# OS generated files #
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Dependency directories (if you have any)
+/external/
+/libs/
+
+# Logs
+*.log
+
+#Temporary files
+*~
+\#*
+*.swp
+
+# Visual Studio-specific (if used): Include if you use Visual Studio
+*.vcxproj
+*.vcxproj.filters
+*.sln
+
+# Qt-specific (if used)
+*.qrc
+*.ui
+
+# CMake-related files (if not in build directory)
+CMakeLists.user
+
+# Editor backups (if you use any specific editor)
+*.bak
+*.tmp
+
+#Ignore file with credentials and settings
+Settings.ini
+keys.txt
+
+

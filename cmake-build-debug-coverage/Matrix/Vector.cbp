@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Vector"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Dungeon\;CMake Files\Element\;CMake Files\Entity\;CMake Files\GameObject\;CMake Files\Item\;CMake Files\Tests\;CMake Files\cmake-build-debug-coverage\;CMake Files\cmake-build-debug-coverage\_deps\;CMake Files\cmake-build-debug-coverage\_deps\googletest-src\;CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googlemock\;CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googletest\;CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googletest\cmake\;CMake Files\Utils\;CMake Files\Matrix\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/Matrix"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/Matrix/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/Matrix/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/Matrix/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/Matrix/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/Dungeon/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Dungeon\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/Element/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Element\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/Entity/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Entity\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/GameObject/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GameObject\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/Item/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Item\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/Tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tests\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/cmake-build-debug-coverage/_deps/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug-coverage\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/Utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Utils\"/>
+		</Unit>
+		<Unit filename="/Users/andrey/Desktop/Tramp_Game/Matrix/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Matrix\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,86 @@
+\doxysection{Tramp\+::Artifact\+Weapon Class Reference}
+\hypertarget{class_tramp_1_1_artifact_weapon}{}\label{class_tramp_1_1_artifact_weapon}\index{Tramp::ArtifactWeapon@{Tramp::ArtifactWeapon}}
+
+
+Класс артефактного оружия  
+
+
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+Inheritance diagram for Tramp\+::Artifact\+Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{class_tramp_1_1_artifact_weapon}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_tramp_1_1_artifact_weapon_aef0c47f387a56ab7e398daa0e18151ad}\label{class_tramp_1_1_artifact_weapon_aef0c47f387a56ab7e398daa0e18151ad} 
+{\bfseries Artifact\+Weapon} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор, не принимающий аргументов \end{DoxyCompactList}\item 
+\Hypertarget{class_tramp_1_1_artifact_weapon_a8bac0d4877c7068ed4ba083c6f3dc570}\label{class_tramp_1_1_artifact_weapon_a8bac0d4877c7068ed4ba083c6f3dc570} 
+{\bfseries Artifact\+Weapon} (std\+::string, size\+\_\+t, size\+\_\+t, size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания артифактного оружия \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_artifact_weapon_aec404798d71372170cb7600c7ffa43ca}{get\+Damage\+Bonus}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения бонуса к наносимому урону \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_artifact_weapon_a14cce569b1cb22bc20b2e3b323571d68}{generate\+Damage}} () override
+\begin{DoxyCompactList}\small\item\em Метод для генерации наносимого урона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_tramp_1_1_regular_weapon}{Tramp\+::\+Regular\+Weapon}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Regular\+Weapon} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор обычного оружия, не принимающий аргументов \end{DoxyCompactList}\item 
+{\bfseries Regular\+Weapon} (std\+::string, size\+\_\+t, size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания обычного оружия \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_regular_weapon_a8fb337f46940fa3b1eaec240b544783d}{generate\+Damage}} () override
+\begin{DoxyCompactList}\small\item\em Метод для вычисления наносимого урона \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_regular_weapon_ab242bd8d6c39bee85f3c3cd56c484a52}{get\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения размера урона \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_tramp_1_1_regular_weapon_ad42427954e3404e58fdb96a15c57a5e8}{get\+Max\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения максимального размера урона \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tramp_1_1_regular_weapon_a9619c0795f581d30c14a2ef99df6b628}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения названия оружия \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс артефактного оружия 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tramp_1_1_artifact_weapon_a14cce569b1cb22bc20b2e3b323571d68}\label{class_tramp_1_1_artifact_weapon_a14cce569b1cb22bc20b2e3b323571d68} 
+\index{Tramp::ArtifactWeapon@{Tramp::ArtifactWeapon}!generateDamage@{generateDamage}}
+\index{generateDamage@{generateDamage}!Tramp::ArtifactWeapon@{Tramp::ArtifactWeapon}}
+\doxysubsubsection{\texorpdfstring{generateDamage()}{generateDamage()}}
+{\footnotesize\ttfamily size\+\_\+t Tramp\+::\+Artifact\+Weapon\+::generate\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Метод для генерации наносимого урона 
+
+\begin{DoxyReturn}{Returns}
+Наносимый урон 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_tramp_1_1_i_weapon_ae6a485560c85475a7783cd8bfe7006d0}{Tramp\+::\+IWeapon}}.
+
+\Hypertarget{class_tramp_1_1_artifact_weapon_aec404798d71372170cb7600c7ffa43ca}\label{class_tramp_1_1_artifact_weapon_aec404798d71372170cb7600c7ffa43ca} 
+\index{Tramp::ArtifactWeapon@{Tramp::ArtifactWeapon}!getDamageBonus@{getDamageBonus}}
+\index{getDamageBonus@{getDamageBonus}!Tramp::ArtifactWeapon@{Tramp::ArtifactWeapon}}
+\doxysubsubsection{\texorpdfstring{getDamageBonus()}{getDamageBonus()}}
+{\footnotesize\ttfamily size\+\_\+t Tramp\+::\+Artifact\+Weapon\+::get\+Damage\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения бонуса к наносимому урону 
+
+\begin{DoxyReturn}{Returns}
+Бонус к наносимому урону 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Item.\+h\end{DoxyCompactItemize}
