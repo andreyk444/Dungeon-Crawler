@@ -1,47 +1,107 @@
-Depths of Knowledge/
-├── BaseEnemy.txt        // File with enemies info
-├── CMakeLists.txt        // Main CMake file
-├── Controller         // Input handling
-│  ├── CMakeLists.txt
-│  ├── include/Controller/Controller.h  // Controller header
-│  └── source/Controller.cpp     // Controller implementation
-├── Dungeon           // Dungeon generation and management
-│  ├── CMakeLists.txt
-│  ├── include/Dungeon/Dungeon.h    // Dungeon header
-│  └── source/dungeon.cpp     // Dungeon implementation
-├── Element           // Base class for many objects
-│  ├── CMakeLists.txt
-│  ├── include/Element/element.h     // Element header
-│  └── source/element.cpp      // Element implementation
-├── Entity           // Base class for game entities
-│  ├── CMakeLists.txt
-│  ├── include/Entity/entity.h      // Entity header
-│  └── source/entity.cpp     // Entity implementation
-├── GameObject         // The base class for all objects on screen
-│  ├── CMakeLists.txt
-│  ├── include/gameObject/GameObject.h   // GameObject header
-│  └── source/gameObject.cpp    // GameObject implementation
-├── Game_Download        // Contains needed resources and files for a game
-│  ├── Download         // Helper class to download some files
-│  │  ├── CMakeLists.txt
-│  │  ├── include/Download/download.h    // Download header
-│  │  └── source/Download.cpp    // Download implementation
-│  ├── Dungeon           // Dungeon content
-│  │  ├── map.txt           // Map of the Dungeon
-│  │  ├── tileset32.png        // Tileset image
-│  │  └── tileset64.png        // Tileset image
-│  ├── END_GAME          // End screen resources
-│  │  ├── lose.png           // Lose screen image
-│  │  └── win.png           // Win screen image
-│  ├── Entity           // Game entity data
-│  │  ├── BaseEnemy.txt        // File with enemies info
-│  │  ├── Character.txt        // Character info file
-│  │  ├── DemonEnemy.txt
-│  │  ├── KenkuEnemy.txt
-│  │  ├── MinotaurEnemy.txt
-│  │  ├── MinotaurEnemyB.txt
-│  │  ├── MummyEnemy.txt
-│  │  └── VampireEnemy.txt
-│  ├── Equipment          // Equipment data
-│  │  └── Armor.txt         // File with the armor information
+# Dungeon Crawler: Labyrinth of Shadows
 
+
+Рогалик-подземелье на C++ с элементами RPG, созданный в учебных целях для освоения продвинутого ООП и паттернов проектирования.
+
+## 🔥 Особенности проекта
+- Полноценная система предметов с наследованием (`IItem`, `IUseable`, `IEquipable`)
+- Сложная система характеристик персонажа (`CharacteristicType`)
+- Различные типы врагов с элементами стихий (`InsectEnemy`, `UndeadEnemy` и др.)
+- Генерация подземелий с использованием матриц (`Matrix<DungeonCell>`)
+- Система инвентаря и экипировки
+- Элементы стихий и их взаимодействия (`InatureElement`)
+
+## 🏗️ Архитектура кода
+```cpp
+namespace Tramp {
+    // Базовые интерфейсы
+    class IItem : public IGameObject;
+    class IUseable : public IItem;
+    class IEquipable: public IItem;
+    
+    // Реализации предметов
+    class Potion : public IUseable;
+    class RegularWeapon : public IWeapon;
+    class ArtifactEquipment : public RegularEquipment, public IArtifact;
+    
+    // Система персонажей
+    class Character : public IEntity;
+    class Enemy : public IEntity;
+    
+    // Генерация подземелий
+    class DungeonCell;
+    class Level;
+    class Dungeon;
+}
+```
+🧩 Ключевые компоненты
+
+Система предметов
+
+```cpp
+enum EquipmentType {
+    AMULET = 0,
+    HELMET,
+    ARMOR,
+    EQUIPMENT_TYPE_SIZE
+};
+
+class IItem : public IGameObject {
+    // Базовый интерфейс для всех предметов
+    ...
+};
+
+class Potion : public IUseable {
+    CharacteristicType characteristicType_;
+    size_t changeSize_;
+    // Реализация использования
+    ...
+};
+```
+Система персонажей
+
+```cpp
+
+class Character : public IEntity {
+private:
+    std::array<size_t, CHARACTERISTICHS_TYPE_SIZE> tableCharacteristics_;
+    std::shared_ptr<IWeapon> weapon_;
+    std::array<std::shared_ptr<IEquipment>, EQUIPMENT_TYPE_SIZE> equipment_;
+public:
+    void equip(const std::shared_ptr<IEquipable>&);
+    size_t getDamage(std::shared_ptr<Enemy>) const;
+    ...
+};
+```
+Генерация уровней
+
+```cpp
+class Level {
+private:
+    Matrix<DungeonCell> playingField_;
+    std::vector<Enemy> enemies_;
+    std::vector<std::shared_ptr<IItem>> items_;
+public:
+    void addEnemy(Enemy &enemy);
+    void killEnemy(Enemy &enemy);
+    ...
+};
+```
+🛠 Сборка и запуск
+
+Требования:
+
+CMake 3.10+
+Компилятор с поддержкой C++17
+```bash
+mkdir build && cd build
+cmake .. && make
+./DungeonCrawler
+```
+📊 Статистика кода
+
+- 10+ классов предметов
+- 5+ типов врагов
+- Полноценная система характеристик
+- Гибкая система экипировки
+- Матричная система уровней
